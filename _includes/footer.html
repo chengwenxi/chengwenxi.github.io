@@ -24,19 +24,7 @@
                     </li>
                     {% endif %}
                     --> 
-
-                    
-                    {% if site.zhihu_username %}
-                    <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa  fa-stack-1x fa-inverse">知</i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
-
+					
                     {% if site.github_username %}
                     <li>
                         <a target="_blank" href="https://github.com/{{ site.github_username }}">
@@ -47,6 +35,17 @@
                         </a>
                     </li>
                     {% endif %}
+					
+					{% if site.stackoverflow %}
+                    <li>
+                        <a target="_blank" href="http://stackoverflow.com/users/{{ site.stackoverflow }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                   {% endif %}
                 </ul>
                 <p class="copyright text-muted">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</p>
             </div>
@@ -58,7 +57,7 @@
 <script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/js/codeboy.min.js " | prepend: site.baseurl }}"></script>
@@ -89,7 +88,7 @@
 
 <!-- Highlight.js -->
 <script>
-    async("//cdn.bootcss.com/highlight.js/9.4.0/highlight.min.js",function(){
+    async("//cdn.bootcss.com/highlight.js/9.8.0/highlight.min.js",function(){
         hljs.initHighlightingOnLoad();
     })
 </script>
