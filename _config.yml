@@ -41,7 +41,7 @@ gems:      ["jekyll-paginate"]
 
 # Conversion
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
@@ -76,11 +76,5 @@ kramdown:
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
   input: GFM
+  syntax_highlighter: rouge
 
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
