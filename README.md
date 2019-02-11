@@ -1,5 +1,5 @@
 # chengwenxi.github.io
-<https://chengwenxi.github.io/>
+<https://chengwenxi.github.io>
 
 ## Prerequisites
 - [ruby](http://rubyinstaller.org/downloads/)
